@@ -57,19 +57,19 @@ export const LayerTwo = styled.div`
 
     input {
         padding: 8px;
-        width: 40%;
+        width: 30%;
     }
 
     #search-level {
         display: flex;
         justify-content: center;
-        width: 80%;
+        width: 100%; 
         padding: 3px;
     }
 
     .lime {
         background-color: #94BB20;
-        padding: 8px;
+        padding: 10px;
         border: none;
     }
 
