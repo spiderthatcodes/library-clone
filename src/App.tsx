@@ -1,12 +1,16 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
-
-  return (
-    <>
-      <h1>Onward!</h1>
-    </>
-  )
+    return (
+        <Router>
+            <Navbar />
+            <Routes>
+                <Route path='/' element={<Home />} /> 
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;
