@@ -36,6 +36,46 @@ export const LayerOne = styled.div`
 
 `;
 
-export const LayerTwo = styled.div``;
+export const LayerTwo = styled.div`
+    background-color: #17a2b8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    .teal-button {
+        background-color: #17a2b8;
+        border: none;
+        border-left: solid 1px white;
+        color: #fff;
+        padding: 8px 12px;
+    }
+
+    .teal-button:last-of-type {
+        border-right: solid 1px white;
+    }
+
+    input {
+        padding: 8px;
+        width: 40%;
+    }
+
+    #search-level {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding: 3px;
+    }
+
+    .lime {
+        background-color: #94BB20;
+        padding: 8px;
+        border: none;
+    }
+
+    .icon {
+        width: 15px;
+    }
+`;
 
 export const LayerThree = styled.div``;
