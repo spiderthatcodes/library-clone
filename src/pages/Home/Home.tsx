@@ -1,11 +1,30 @@
 import { FC } from 'react';
-import { Container, Wrapper, GridSide, LinkSide } from './style';
+import { Container, Wrapper, GridSide, LinkSide, ColorCard } from './style';
 
 const Home: FC = () => {
+    const colors: string[] = [
+        '#007bff',
+        '#6610f2',
+        '#6f42c1',
+        '#e83e8c',
+        '#dc3545',
+        '#fd7e14',
+        '#ffc107',
+        '#28a745',
+        '#20c997',
+        '#17a2b8',
+        '#eb6126',
+        '#660B80',
+    ];
+
     return (
         <Wrapper>
             <Container>
-                <GridSide></GridSide>
+                <GridSide>
+                    {colors.map((color) => (
+                        <ColorCard key={color} color={color} />
+                    ))}
+                </GridSide>
                 <LinkSide></LinkSide>
             </Container>
         </Wrapper>

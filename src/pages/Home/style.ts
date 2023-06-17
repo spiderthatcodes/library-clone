@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
     max-width: 1200px;
     margin: auto;
-    padding: 0 80px;
+    padding: 0 60px;
 `;
 
 export const Container = styled.div`
@@ -13,8 +13,21 @@ export const Container = styled.div`
 
 export const GridSide = styled.div`
     flex: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 3px;
 `;
 
 export const LinkSide = styled.div`
-    flex: 30%;
+    width: 250px;
+`;
+
+export const ColorCard = styled.div<{ color: string }>`
+    background-color: ${({ color }) => color && color};
+    height: 160px;
+    width: 205px;
+    margin: 5px;
+    border-radius: 4px;
+    border: darkgrey 1px solid;
+    /* flex: 25%; */
 `;
