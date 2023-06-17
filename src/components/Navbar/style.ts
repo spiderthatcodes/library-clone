@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const NavContainer = styled.div`
     position: sticky;
-    /* background-color: #17a2b8; */
 `;
 
 export const LayerOne = styled.div`
@@ -48,7 +47,7 @@ export const LayerTwo = styled.div`
         border: none;
         border-left: solid 1px white;
         color: #fff;
-        padding: 8px 12px;
+        padding: 10px 16px;
     }
 
     .teal-button:last-of-type {
@@ -57,7 +56,7 @@ export const LayerTwo = styled.div`
 
     input {
         padding: 8px;
-        width: 30%;
+        width: 35%;
     }
 
     #search-level {
@@ -71,6 +70,8 @@ export const LayerTwo = styled.div`
         background-color: #94BB20;
         padding: 10px;
         border: none;
+        border-top: 1px #94BB20 inset;
+        border-bottom: 1px #94BB20 outset;
     }
 
     .icon {
