@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Container, Wrapper, GridSide, LinkSide, ColorCard } from './style';
+import { Container, Wrapper, GridSide, LinkSide, ColorCard, BlackBox } from './style';
 
 const Home: FC = () => {
     const colors: string[] = [
@@ -25,7 +25,9 @@ const Home: FC = () => {
                         <ColorCard key={color} color={color} />
                     ))}
                 </GridSide>
-                <LinkSide></LinkSide>
+                <LinkSide>
+                    <BlackBox />
+                </LinkSide>
             </Container>
         </Wrapper>
     );
