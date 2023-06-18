@@ -27,6 +27,7 @@ const Home: FC = () => {
                 </GridSide>
                 <LinkSide>
                     <BlackBox />
+                    <BlackBox />
                 </LinkSide>
             </Container>
         </Wrapper>
